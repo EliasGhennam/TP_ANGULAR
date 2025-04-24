@@ -29,7 +29,7 @@ Par la suite il fallait bien incrémenter le code présent dans le html pour fai
 
 Les concepts Angular présent dans ces TODO sont les FormGroup (éléments de formulaires), les formControlName (La liaison des champs), et l'usage de *ngIf (Pour réaliser le conditionnel).
 
-TODO 8 :
+TODO 8 & 12:
 
 Création d'un moyen de retourner à la page précédente lors de l'usage de la fonction "goBack", dans le cas échéant, utilisés dans book-detail.component.html
 
@@ -49,7 +49,62 @@ Dans ce TODO, l'objectif était d'appliquer une directive personnalisé à un ch
 
 Les concepts clés Angular : usage de directives personnalisés : @Directive, manipulation du DOM avec Renderer2.
 
-TODO 11 :
+TODO 11 : Pas trouvé dans le code.
+
+TODO 13 :
+
+Contenu mal affiché dans la page. Pour correctement afficher les livres, il fallait appeler books au lieu de data.
+
+Concepts Angular : Bien assurer l'usage des bon noms de variables dans les dépendances avec notre méthode getBooks() pour bien faire fonctionner notre *ngIf="books...".
+
+TODO 14 :
+
+Appliquer la directive Highlight sur le champs souhaité. Bien faire attention à importer dans le book-list.component.ts la directive Highlight.
+
+Concepts ANGULAR : Usage de @Directive et vérification des imports dans le component sollicité, usage d'un attribut sur un élément du corps [<h2 highlight></h2>]
+
+TODO 15 :
+
+Importation d'un Pipe truncate avec "ng generate pipe truncate", incrémentation du truncate.pipe.ts pour correspondre à notre besoin, l'importer dans le @Component de notre component puis l'insérer dans l'élément que l'on souhaite soumettre au Pipe, dans le cas échéant, notre description.
+
+Concepts ANGULAR : @Pipe, PipeTransform, importations dans le @Component, transformation des données via Pipe.
+
+TODO 16 : 
+
+Créer une alerte lorsque l'élément est solliciter en faisant l'usage de la méthode "alert()".
+
+Concepts ANGULAR : Usage de la méthode "alert()" Appel d'un service BookService, gestion des réponses HTTP avec subscribe().
+
+TODO 17, 18 & 19 :
+
+Il faut afficher une notification pour les différents cas rencontrés. Pour se faire, nous ferons l'usage d'un "alert".
+
+Concepts ANGULAR : Gestion des erreurs via subscribe, error, next. Interaction avec "alert()".
+
+TODO 20 :
+
+Il faut bien que le title soit exporté depuis le home.compnent.ts, par la suite, pour faire en sorte que ce dernier soit bien en majuscule, il suffit de faire l'usage du pipe "uppercase".
+
+Concepts ANGULAR : Usage du pipe uppercase.
+
+TODO 22 et 23 BONUS :
+
+Créer les components :
+
+Créer le component header angular avec la commande : ng generate component components/header --standalone --flat et le footer avec ng generate component components/footer --standalone --flat. Importations des deux nouveaux modules dans le app.component.ts. Transfert du contenu initialement sur app.component.html vers les modules respectifs. Utilisation du pipe capitalizeFirst pour le titre du component.header.html. Utilisation des balises <app-header></app-header> et <app-footer></app-footer> ans le app.component.ts. [Bonus : ajout d'une stylisation CSS].
+
+Concepts ANGULAR : routerLink, capitalizeFirst,CSS, dépendances, importations.
+
+TODO 24 :
+
+Ajout de l'@Input dans notre directive avec une condition OnChanges pour activer notre effet sur l'élément une fois le condition book.isFavorite est true. Modification du book-list.component(ts et html) ainsi que de book-detail.component.(ts et html) pour importer et utiliser les Pipe et Directive.
+
+Notions ANGULAR : Usage des @Directive, usage des @Input et OnChanges, manipulation du DOM avec Renderer2.
+
+
+
+
+
 
 
 
